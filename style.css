@@ -1,0 +1,1023 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*navigation*/
+
+nav{
+    position: fixed;
+    background-color: #ece9e8;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+nav img{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 0px;
+
+}
+nav .navigation {
+    display: flex;
+}
+
+#menuopen {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#menuclose {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: #4b0082;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: algerian;
+    transition: 0.4s ease-in-out;
+
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+    color:#fdc93b ;
+}
+
+/* home*/
+#more1{
+    display: none;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.slides img{
+    width: 100%;
+   
+    display: none;
+}
+
+img.displayslide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 4px;
+    font-size: 2rem;
+    background-color: hsl(16, 36%, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next{
+    right: 0px;
+}
+
+@keyframes fade {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+/* information styling */
+ #features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+ }
+
+ #features h1{
+    font-size: 3.0rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0c0d38c5;
+ }
+ #features p{
+    font-size: 3.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0c0d38c5;
+ }
+ #features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 60px;
+ }
+
+
+ #features .fea-box {
+     background: #F9F9FF;
+     text-align: start;
+ }
+
+ #features .fea-box img{
+    width: 120px;
+    border: 1px double rgb(46,46,59);
+    
+ }
+
+ #features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+ }
+ #features .fea-box p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+    width: 90%;
+ }
+ 
+
+#profile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 60px;
+
+}
+
+#profile .certified{
+    background-color: rgb(230, 182, 79);
+    width: 100%;
+    height: 100%;
+}
+
+#profile .certified h1{
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgba(180, 21, 21, 0.712);
+
+}
+
+#profile .certified p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 2px;
+    margin-bottom: 10px;
+}
+
+#profile .enrolled{
+    background-color: rgb(136, 224, 125);
+    width: 100%;
+    height: 100%;
+}
+
+#profile .enrolled h1{
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(1, 29, 71);
+
+}
+
+#profile .enrolled p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 2px;
+    margin-bottom: 10px;
+}
+
+#profile .activities{
+    background-color: rgb(165, 217, 224);
+    width: 100%;
+    height: 100%;
+}
+
+#profile .activities h1{
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(199, 216, 44);
+
+}
+
+#profile .activities p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 2px;
+    margin-bottom: 10px;
+    
+}
+
+
+/*footer*/
+
+footer{
+    background-color: hsl(0, 4%, 50%);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 60px;
+    margin:30px;
+}
+.quick-links h3{
+    text-decoration: underline;
+    color: rgb(173, 3, 3);
+}
+
+.quick-links a{
+    display: grid;
+    grid-template-rows: repeat(6);
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: .5s ease;
+   
+    
+}
+.quick-links a:hover{
+    color: rgb(173, 3, 3);
+}
+.core-values h3{
+    color:rgb(173, 3, 3) ;
+}
+
+.core-values li{
+    font-size:1.3rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: circle;
+}
+
+.our-branches h3, .contact h3{
+    color:rgb(173, 3, 3) ;
+}
+.our-branches li, .contact li{
+    font-size:1.3rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: circle;
+}
+.our-info h3{
+    text-align: center;
+}
+
+
+/* styling on about page */
+#about-home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(images/12.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+#about-home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+.infomation-text p{
+    font-size: 2.5rem;
+    font-weight: 600%;
+    text-align: center;
+}
+
+#more{
+    display: none;
+}
+#btnmore{
+    padding: 5px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+/* responsive styling on home page*/
+@media all and (max-width:1024px){
+    #menuopen {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+    #menuclose {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+
+    #menu{
+        transition: 0.4s ease;
+    }
+
+    .slides img {
+        width: 100%;
+      margin-top: 80px;
+    }
+    #features h1 {
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .slider button {
+        position: absolute;
+        top: 170px;
+        transform: translateY(-50%);
+        padding: 5px 4px;
+        font-size: 2rem;
+        background-color: hsl(16, 36%, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+
+
+    nav{
+        padding: 15px 20px;
+        background-color: #0000ff;
+     
+
+    }
+
+    nav img {
+        width: 80px;
+       
+    }
+
+
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 220px;
+        background-color: rgba(17,20,104,0.45) ;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255,255,255,0.18);
+        border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+
+    nav .navigation ul li{
+        padding: 18px;
+        transition: 0.4s ease;
+
+    }
+
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+}
+
+
+@media all and (max-width:820px){
+    #features {
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .slider {
+        position: relative;
+        width: fit-content;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-top: 28px;
+        display: block;
+        border: 1px solid black;
+        
+    }
+    #menuopen {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+    #menuclose {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+
+    #menu{
+        transition: 0.4s ease;
+    }
+
+
+    nav{
+        padding: 15px 20px;
+        background-color: #0000ff;
+     
+
+    }
+
+    nav img {
+        width: 80px;
+       
+    }
+
+
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 220px;
+        background-color: rgba(17,20,104,0.45) ;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255,255,255,0.18);
+        border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+
+    nav .navigation ul li{
+        padding: 18px;
+        transition: 0.4s ease;
+
+    }
+
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+
+
+}
+
+ @media all and (max-width:768px) {
+
+
+    #menuopen {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+    #menuclose {
+        width: 30px;
+        height: 30px;
+        display: initial;
+    }
+
+    #menu{
+        transition: 0.4s ease;
+    }
+
+
+    nav{
+        padding: 15px 20px;
+        background-color: #0000ff;
+     
+
+    }
+
+    nav img {
+        width: 80px;
+       
+    }
+
+
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 220px;
+        background-color: rgba(17,20,104,0.45) ;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255,255,255,0.18);
+        border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+
+    nav .navigation ul li{
+        padding: 18px;
+        transition: 0.4s ease;
+
+    }
+
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+
+
+ }
+@media all and (max-width:360px){
+    #home h2 {
+      
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        
+    }
+
+
+    #home p {
+        color: #fff;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #home a {
+        text-decoration: none;
+        background-color: #fff;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 8px 20px;
+        font-weight: 700%;
+        font-family: 'Times New Roman', Times, serif;
+        transition: .5s ease;
+    }
+
+    #features h1 {
+        font-size: 2.0rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features p {
+        font-size: 2.0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features .fea-box img {
+        width: 80px;
+        border: 1px double rgb(46,46,59);
+    }
+
+    #features .fea-box p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(70,70,87);
+        width: 100%;
+    }
+
+    #profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1rem;
+        margin-top: 60px;
+    }
+    #profile .certified h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgba(180, 21, 21, 0.712);
+    }
+
+    #profile .enrolled h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(1, 29, 71);
+    }
+
+    #profile .activities h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(199, 216, 44);
+    }
+    .footer-info h1 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .footer-info p {
+        font-size: 1.6rem;
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+    
+/* responsive styling on about page */
+
+#menuopen {
+    width: 30px;
+    height: 30px;
+    display: initial;
+}
+#menuclose {
+    width: 30px;
+    height: 30px;
+    display: initial;
+}
+
+
+
+#about-home h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.infomation-text p{
+        font-size: 1.5rem;
+       
+        width: 100%;
+}
+
+/* resposive styling on home page screen (412)*/
+
+}
+
+@media all and (max-width:412px){
+    #home h2 {
+      
+        font-size: 1rem;
+        letter-spacing: 1px;
+        
+    }
+
+    #home p {
+        color: #fff;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #home a {
+        text-decoration: none;
+        background-color: #fff;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 8px 20px;
+        font-weight: 700%;
+        font-family: 'Times New Roman', Times, serif;
+        transition: .5s ease;
+    }
+
+    #features h1 {
+        font-size: 2.0rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features p {
+        font-size: 2.0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features .fea-box img {
+        width: 80px;
+        border: 1px double rgb(46,46,59);
+    }
+
+    #features .fea-box p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(70,70,87);
+        width: 100%;
+    }
+
+    #profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1rem;
+        margin-top: 60px;
+    }
+    #profile .certified h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgba(180, 21, 21, 0.712);
+    }
+
+    #profile .enrolled h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(1, 29, 71);
+    }
+
+    #profile .activities h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(199, 216, 44);
+    }
+    .footer-info h1 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .footer-info p {
+        font-size: 1.6rem;
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+
+/* resposive styling on about page screen (412)*/
+
+
+#about-home h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.infomation-text p{
+        font-size: 1.5rem;
+       
+        width: 100%;
+}
+
+}
+
+@media all and (max-width:414px){
+    #features h1 {
+        font-size: 2.0rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #0c0d38c5;
+        
+    }
+    #home h2 {
+      
+        font-size: 1rem;
+        letter-spacing: 1px;
+        
+    }
+
+    #home p {
+        color: #fff;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #home a {
+        text-decoration: none;
+        background-color: #fff;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 8px 20px;
+        font-weight: 700%;
+        font-family: 'Times New Roman', Times, serif;
+        transition: .5s ease;
+    }
+
+    #features h1 {
+        font-size: 2.0rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features p {
+        font-size: 2.0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features .fea-box img {
+        width: 80px;
+        border: 1px double rgb(46,46,59);
+    }
+
+    #features .fea-box p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(70,70,87);
+        width: 100%;
+    }
+
+    #profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1rem;
+        margin-top: 60px;
+    }
+    #profile .certified h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgba(180, 21, 21, 0.712);
+    }
+
+    #profile .enrolled h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(1, 29, 71);
+    }
+
+    #profile .activities h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(199, 216, 44);
+    }
+    .footer-info h1 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .footer-info p {
+        font-size: 1.6rem;
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+
+/* about styling */
+
+
+#about-home h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.infomation-text p{
+        font-size: 1.5rem;
+       
+        width: 100%;
+}
+
+}
+
+@media all and (max-width:430px){
+    #home h2 {
+      
+        font-size: 1rem;
+        letter-spacing: 1px;
+        
+    }
+    
+
+    #home p {
+        color: #fff;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #home a {
+        text-decoration: none;
+        background-color: #fff;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 8px 20px;
+        font-weight: 700%;
+        font-family: 'Times New Roman', Times, serif;
+        transition: .5s ease;
+    }
+
+    #features h1 {
+        font-size: 2.0rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features p {
+        font-size: 2.0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0c0d38c5;
+    }
+
+    #features .fea-box img {
+        width: 80px;
+        border: 1px double rgb(46,46,59);
+    }
+
+    #features .fea-box p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(70,70,87);
+        width: 100%;
+    }
+
+    #profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1rem;
+        margin-top: 60px;
+    }
+    #profile .certified h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgba(180, 21, 21, 0.712);
+    }
+
+    #profile .enrolled h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(1, 29, 71);
+    }
+
+    #profile .activities h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: rgb(199, 216, 44);
+    }
+    .footer-info h1 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .footer-info p {
+        font-size: 1.6rem;
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+/* about styling */
+
+
+#about-home h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.infomation-text p{
+        font-size: 1.5rem;
+       
+        width: 100%;
+}
+
+}
+
+@media all and (max-width:540px){
+    #home h2 {
+        color: #fff;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    #features .fea-box {
+        background: #F9F9FF;
+        align-items: stretch;
+    
+    }
+}
